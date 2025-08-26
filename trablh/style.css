@@ -1,0 +1,49 @@
+body {
+    color:white;
+    font-size: 16px;
+    font-family: Tahoma, Geneva;
+    background-color: black;
+}
+
+.caixa{
+    display: flex;
+    text-align: center;
+    padding: 20px;
+    background-color: darkgrey; 
+}
+
+button{
+    display: flex;
+    text-align: center;
+    font-size: 12px;
+    background-color: #008cff;
+    color: white;
+    border-radius: 5px;
+    padding: 10px, 20px, 30px, 40px;
+    cursor: pointer;
+}
+
+p:hover{
+    color:white;
+}
+
+.check{
+    
+    padding:5px;
+}
+
+.text1{
+    color:white;
+}
+.text2{
+    color:red;
+}
+.text3{
+    color: green;
+}
+
+input{
+    display: flex;
+    text-align: center;
+    font-size: 12px;
+}
