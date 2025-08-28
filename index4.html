@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+         Rank 22° campeonato de MK9
+    </header>
+    <h2>
+        Veja sua colocação em tempo real dos seus personagens mais jogados
+    </h2>
+    <ul>
+        <li onclick="escolha('personagem1')">Cyrax </li>
+
+        <li onclick="escolha('personagem2')">Sektor </li>
+
+        <li onclick="escolha('personagem3')">Scorpion </li>
+
+    </ul>
+<div id="j"></div>
+    <footer>
+        <a href="https:\\www.youtube.com"> Assista ao vivo no youtube </a>
+    </footer>
+
+    <script>
+
+        async function escolha(personagem){
+            try{
+        document.getElementById("j").innerHTML = "carregando..."
+
+        await new Promise (resolve => setTimeout(resolve, 1200) )
+
+        let mensagens = {
+            "personagem1": "sua posição: 101°  pontuação: 1009pts    partidas:38",
+            "personagem2": "sua posição: 85°   pontuação: 1410pts    partidas:23",
+            "personagem3": "sua posição 40°    pontuação: 1886pts    partidas:59",
+        };
+
+        document.getElementById("j").innerHTML=mensagens[personagem]
+    }
+        catch(erro){
+            document.getElementById("j").innerHTML="error: " + erro.message;
+    }
+}
+
+    </script>
+
+    <style>
+        li{
+            cursor: pointer;
+        }
+    </style>
+
+</body>
+</html>
